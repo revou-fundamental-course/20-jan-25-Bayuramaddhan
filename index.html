@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+
+    <link rel="stylesheet" href="css\style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <h1>Kalkulator BMI</h1>
+    </header>
+
+    <main>
+        <section class="left-content">
+            <!-- introduction -->
+            <div class="box-content">
+                <article>
+                    <p>
+                        Berat badan ideal adalah impian semua orang.
+                        Tidak hanya memiliki bentuk tubuh yang menunjang penampilan,
+                        berat badan ideal juga menandakan kondisi tubuh yang sehat.
+                        Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.
+                    </p>
+                </article>
+
+                
+                <!-- Form Kalkulator -->
+                <form class="calc-form" id="calc-form">
+                    <div class="radio-box">
+                        <label for="gender-box">Jenis Kelamin</label>
+                        <div class="gender-box">
+                            <input type="radio" name="gender" id="pria-gdr" value="pria">
+                            <label for="pria-gdr">Pria</label>
+
+                        </div>
+                        <div class="gender-box">
+                            <input type="radio" name="gender" id="wanita-gdr" value="wanita">
+                            <label for="wanita-gdr">Wanita</label>
+                        </div>
+
+                    </div>
+
+                    <div class="input-box">
+                        <label for="input-bb">Berat Badan (KG)</label>
+                        <input type="number" id="input-bb" placeholder="Masukkan Berat Badan Anda" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="input-tb">Tinggi Badan (CM)</label>
+                        <input type="number" id="input-tb" placeholder="Masukkan Tinggi Badan Anda" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="input-tt">Usia (Tahun)</label>
+                        <input type="number" id="input-tt" placeholder="Masukkan Usia Anda" required>
+                    </div>
+
+                    <div class="button">
+                        <button class="btn submit" type="submit">Hitung</button>
+                        <button class="btn reset" type="reset">Reset</button>
+                    </div>
+            
+                </form>
+
+
+                <article>
+                    <p>
+                        Keunggulan fitur <br>
+                        1. Menghitung berat badan <br>
+                        2. Menentukan kategori berat badan ideal atau tidak <br>
+                        3. Mempersiapkan program penurunan berat badan <br>
+                        <br>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+                        <br>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M2.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="right-content">
+            <div class="box-content">
+
+                <div class="result-box">
+                    <div class="result">
+                        <h3>Harap isi data terlebih dahulu ya...</h3>
+                        <p>Hasil akan tampil disini</p>
+                    </div>
+
+                </div>
+
+                <article>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, rerum!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat aliquid voluptatem possimus adipisci provident sit corporis, quasi eos deserunt delectus deleniti doloribus facere ab eaque quod ea molestias. Ea, ex.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+    <script src="js\script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+*{
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed ;
+    display: block;
+}
+
+header{
+    background-color: white;
+    width: 400px;
+    margin: 5px auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+
+}
+h1{
+    margin: 0;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+main{
+    display: flex;
+    gap : 18px;
+    padding: 0px 15px;
+}
+main section{
+    width: 100%;
+    padding: 10px;
+}
+section .box-content{
+    background-color: rgba(255, 255, 255, 0.800);
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* box-shadow: 1px solid black; */
+}
+
+
+.calc-form,
+.result-box{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.900);
+    border: 1px solid gray;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.calc-form .radio-box,
+.calc-form .input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.calc-form .input-box input{
+    border: 0.5px solid rgb(24, 135, 209);
+    border-radius: 5px;
+    height: 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.calc-form .input-box label{
+    font-size: .9rem;
+    margin-bottom: 3px;
+}
+
+.calc-form .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.calc-form .button .btn{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 22%;
+    height: 30px;
+    /* margin: 0 auto; */
+
+    border: none;
+    border-radius: 5px;
+}
+.submit{
+    background: #0b8dff;
+    color: white;
+}
+.reset{
+    background: red;
+    color: white;
+}
+.submit:hover{
+    background: green;
+}
+.reset:hover{
+    background: grey;
+    /* color: white; */
+}
+
+/* Result sec */
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
