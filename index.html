@@ -19,6 +19,9 @@
     </header>
 
     <main>
+
+        <!-- Section kalkulator -->
+         <!-- Section ini digunakan untuk user agar dapat memasukkan data -->
         <section class="left-content">
             <!-- introduction -->
             <div class="box-content">
@@ -65,12 +68,13 @@
 
                     <div class="button">
                         <button class="btn submit" type="submit">Hitung</button>
-                        <button class="btn reset" type="reset">Reset</button>
+                        <button class="btn reset" type="reset" onclick="resetForm()">Reset</button>
                     </div>
             
                 </form>
+                <!-- End Calculator -->
 
-
+                <!-- Deskripsi singkat tentang  fungsi web  -->
                 <article>
                     <p>
                         Keunggulan fitur <br>
@@ -83,30 +87,58 @@
                 </article>
             </div>
         </section>
+        <!-- End Section kalkulator -->
 
+        <!-- Start section result -->
+        <!-- Section ini digunakan untuk menampilkan hasil bmi yang telah dihitung
+            Section ini juga menampilkan beberapa penjelasan lain terkait bmi yang didapatkan-->
         <section class="right-content">
             <div class="box-content">
 
                 <div class="result-box">
-                    <div class="result">
-                        <h3>Harap isi data terlebih dahulu ya...</h3>
-                        <p>Hasil akan tampil disini</p>
+                    <div class="result" id="result">
+                        <div class="none-data">
+                            <h3>Harap isi data terlebih dahulu ya...</h3>
+                            <p>Hasil akan tampil disini</p>
+                        </div>
+
+                        <!-- <div class="full-data">
+                            <p>Anda merupakan seorang <span>pria</span> yang berusia <span>18 tahun</span></p>
+
+                            <p>BMI anda saat ini adalah:</p>
+                            <h1>15,1</h1>
+                            <p>Anda <span>Obestia</span></p>
+                        </div> -->
                     </div>
 
                 </div>
 
-                <article>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, rerum!
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat aliquid voluptatem possimus adipisci provident sit corporis, quasi eos deserunt delectus deleniti doloribus facere ab eaque quod ea molestias. Ea, ex.
+                <article class="status-explain" id="status-explain">
+                    <!-- <p>
+                        Hasil BMI lebih dari 25. Anda berada dalam kategori obesitas.
+                        <br>Usahakan untuk menurunkan berat badan dan menerapkan pola hidup sehat dengan menjaga makan dan aktivitas fisik.
+                        <br>Segera kunjungi dokter untuk dilakukan pemeriksaan kesehatan lanjutan untuk mengetahui risiko yang Anda miliki terkait berat badan Anda.
                     </p>
+
+                    <div class="diseas">
+                        <p>
+                            Beberapa penyakit yang berasal dari kegemukan
+                            <br>Diabetes
+                            <br>Hipertensi
+                            <br>Sakit Jantung
+                            <br>Osteoarthritis
+                        </p>
+                    </div> -->
                 </article>
             </div>
         </section>
+        <!-- End section result -->
 
     </main>
 
     <footer>
-
+        <p>REVOU Software Enginering Fundamental Course</p>
+        <p>Create By Bayu Ramadhan With Kepepet</p>
     </footer>
 
 
